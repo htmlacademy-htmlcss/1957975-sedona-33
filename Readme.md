@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Игорь Пушкарев](https://up.htmlacademy.ru/htmlcss/33/user/1957975).
-* Наставник: `Неизвестно`.
+- Студент: [Игорь Пушкарев](https://up.htmlacademy.ru/htmlcss/33/user/1957975).
+- Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
