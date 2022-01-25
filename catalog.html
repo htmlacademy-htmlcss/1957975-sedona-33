@@ -6,46 +6,36 @@
   </head>
   <body>
     <header class="page_header">
-
+      <nav class="navigation">
         <!-- 1й список ссылок в заголовке страницы -->
-        <nav class="navigation">
-          <ul class="navigtion_list">
-            <li class="navigation_item">
-              <a class="navigation_link" href="#"> <img src="" alt="ссылка логотип на главную страницу">
-                <img class="navigation_header_logo" alt="Логотип Седона" src="">
-              </a>
-            </li>
-            <li class="navigation_item">
-              <a class="navigation_link" href="#"> Главная</a>
-            </li>
-            <li class="navigation_item">
-              <a class="navigation_link" href="#"> О Седоне</a>
-            </li>
-            <li class="navigation_item">
-              <a class="navigation_link" href="#"> Гостиницы</a>
-            </li>
-          </ul>
+        <a class="navigation_link" href="#"> <img src="" alt="ссылка логотип на главную страницу">
+          <img class="navigation_header_logo" alt="Логотип Седона" src="">
+        </a>
+        <ul class="navigtion_list"></ul>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#"> Главная</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#"> О Седоне</a>
+          </li>
+          <li class="navigation_item">
+            <a class="navigation_link" href="#"> Гостиницы</a>
+          </li>
+        </ul>
 
-          <!-- 2й список ссылок в заголовке страницы -->
-          <ul class="navigtion_list navigation_user">
-            <li class="navigation_item">
-              <a class="icon_button" href="#">
-                <span class="visually_hidden">Поиск</span>
-                <img class="search" alt="поиск" src="">
-              </a>
-            </li>
-            <li class="navigation_item">
-              <a class="icon_button" href="#">
-                <span class="visually_hidden">лайки</span>
-                <img class="search" alt="лайки" src="">
-              </a>
-            </li>
-            <li class="navigation_item">
-              <lable class="button_want_here">
-                <a class="icon_button" href="#">Хочу сюда!</a>
-              </lable>
-          </ul>
-        </nav>
+        <!-- 2й список ссылок в заголовке страницы -->
+        <ul class="navigtion_list navigation_user">
+          <li class="navigation_item">
+            <span class="visually_hidden">Поиск</span>
+          </li>
+          <li class="navigation_item">
+            <span class="visually_hidden">лайки</span>
+          </li>
+          <li class="navigation_item">
+              <a class="icon_button" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main_inner">
@@ -60,10 +50,7 @@
             </a>
           </li>
           <li class="breadcrumbs_item">
-            <img class="arrow" src="" alt="стрелочка">
-          </li>
-          <li class="breadcrumbs_item">
-            <p>Гостиницы</p>
+            Гостиницы
           </li>
         </ol>
       </section>
@@ -125,8 +112,8 @@
           </fieldset>
 
           <div class="button_form">
-            <input type="submit" value="Применить">
-            <input type="submit" value="Сбросить">
+            <button>Применить</button>
+            <input type="reset" value="Сбросить">
           </div>
         </form>
       </section>
@@ -134,29 +121,12 @@
 
       <!--Секция с сортровокой гостиниц по критериям-->
       <section class="sorting">
-        <ul class="sorting_list">
-          <li class="sorting_item">
-            <h2>Найдено гостиниц: 38</h2>
-          </li>
-          <li class="sorting_item">
-            <select class="select_control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="expensive">Сначала дорогое</option>
-              <option value="popular">Сначала популярное</option>
-            </select>
-          </li>
-          <li class="sorting_item">
-            <a class="button_bar" href="#">
-              <img class="search" alt="сортировка плитка" src="">
-            </a>
-            <a class="button_list" href="#">
-              <img class="search" alt="сортировка лист" src="">
-            </a>
-            <a class="button_little_list" href="#">
-              <img class="search" alt="сортировка список" src="">
-            </a>
-          </li>
-        </ul>
+        <h2 class="title_sorting">Найдено гостиниц: 38</h2>
+        <select class="select_control" aria-label="Сортировка">
+          <option value="cheap" selected>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
+        </select>
       </section>
 
       <!-- Карточки гостиниц-->
@@ -177,8 +147,8 @@
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
-              <li class="star_score">Рейтинг: 8,5</li>
             </ul>
+            <spasn class="star_score">Рейтинг: 8,5</spasn>
           </li>
 
           <li class="hotel_card">
@@ -195,8 +165,8 @@
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
-              <li class="star_score">Рейтинг: 8,9</li>
             </ul>
+            <span class="star_score">Рейтинг: 8,9</span>
           </li>
 
           <li class="hotel_card">
@@ -214,8 +184,8 @@
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
-              <li class="star_score">Рейтинг: 9,2</li>
             </ul>
+            <span class="star_score">Рейтинг: 9,2</span>
           </li>
           <li class="hotel_card">
             <a class="hotel_card_link" href="catalog.html">
@@ -232,8 +202,8 @@
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
               <li class="star"><img src="" alt="звезда"></li>
-              <li class="star_score">Рейтинг: 9,2</li>
             </ul>
+            <span class="star_score">Рейтинг: 9,2</span>
           </li>
         </ul>
         <ul class="pagination">
@@ -262,19 +232,20 @@
               <span class="visually_hidden">10</span>
             </a>
           </li>
-
-          <!--кнопка загрузить еще варианты гостиниц-->
-          <button class="button pagination_show_more" type="button">Загрузить еще</button>
-
-          <!--список показывающий количество гостиниц на странице-->
-          <label class="select_list">Гостиниц на странице:
-            <select class="select_control" name="Гостиниц на странице" aria-label="Сортировка">
-              <option value="cheap" selected>4</option>
-              <option value="expensive">6</option>
-              <option value="popular">8</option>
-            </select>
-          </label>
         </ul>
+
+        <!--кнопка загрузить еще варианты гостиниц-->
+        <button class="button pagination_show_more" type="button">Загрузить еще</button>
+
+        <!--список показывающий количество гостиниц на странице-->
+        <label class="select_list">Гостиниц на странице:
+          <select class="select_control" name="Гостиниц на странице" aria-label="Сортировка">
+            <option value="cheap" selected>4</option>
+            <option value="expensive">6</option>
+            <option value="popular">8</option>
+          </select>
+        </label>
+
       </section>
 
       <!-- Блок с рассылкой на почту -->
@@ -286,9 +257,7 @@
           <label>
             <input type="email" placeholder="Ваш e-mail" required>
           </label>
-          <div class="distribution_form_buttons">
-            <input type="submit" value="Подписаться">
-          </div>
+            <input class="distribution_form_buttons" type="submit" value="Подписаться">
         </form>
       </section>
     </main>
@@ -304,23 +273,20 @@
         </li>
         <li>
           <img class="socials_footer facebook" src="" alt="фейсбук">
-          <a class="button" href=" https://www.facebook.com/htmlacademy">
+          <a class="button" href="https://www.facebook.com/htmlacademy">
             <span class="visually_hidden">фейсбук</span>
           </a>
         </li>
         <li>
-          <img class="socials_footer youtube" src="" alt="ютую">
+          <img class="socials_footer youtube" src="" alt="ютуб">
           <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
             <span class="visually_hidden">ютуб</span>
           </a>
         </li>
       </ul>
 
-      <a class="phone_number" href="tel: +78128121212">+7(812)812-12-12</a>
-
-      <div class="footer_logo">
-        <img src="" alt="Html Academy">
-      </div>
+      <a class="phone_number" href="tel:+78128121212">+7(812)812-12-12</a>
+      <img class="footer_logo" src="" alt="Html Academy">
     </footer>
   </body>
 </html>
