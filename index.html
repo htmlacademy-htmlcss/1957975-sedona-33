@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!-- <link rel="stylesheet" href="styles/styles.css"> раскомментирую когда верну файл с css -->
+    <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -11,7 +11,7 @@
         <nav class="navigation">
           <!-- 1й список ссылок в заголовке страницы -->
           <a class="navigation_link_logo" href="index.html">
-            <img class="navigation_header_logo" src="./image/header-icon/logo.svg" width="139" height="70" alt="Логотип Седона.">
+            <img class="navigation_header_logo" src="./images/header-icon/logo.svg" width="139" height="70" alt="Логотип Седона.">
           </a>
           <ul class="navigtion_list">
             <li class="navigation_item">
@@ -45,12 +45,16 @@
       <!--Лого главного экрана-->
       <main class="main_index">
         <section class="welcome_to_sedona">
+          <div class="vector_index_background">
             <h1 class="visually_hidden">welcome</h1>
             <img class="logo_sedona" src="./images/welcome.svg" width="458" height="352" alt="sedona.">
-            <h2 class="sedona_description">
-              Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="sedona_description_text">
-              Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+        </section>
+        <section class="welcome_to_sedona_text">
+          <h2 class="sedona_description">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="sedona_description_text">
+            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
 
         <!-- основная информация Седоне -->
@@ -147,7 +151,7 @@
         </ul>
 
         <a class="phone_number" href="tel: +78128121212">+7(812)812-12-12</a>
-        <img class="footer_logo" src="./images/logo_htmlacademy.svg" width="115" height="34" alt="Html Academy.">
+        <img class="footer_logo" src="./images/logo-htmlacademy.svg" width="115" height="34" alt="Html Academy.">
       </footer>
     </div>
   </body>
