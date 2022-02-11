@@ -13,7 +13,13 @@
   font-display: swap;
 }
 
+html{
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -27,14 +33,54 @@ body {
   margin-right: auto;
 }
 
-
+ul{
+  margin-left: 0;
+  padding-left: 0
+}
+li{
+  list-style-type:none;
+}
 .shadow_page {
   background-color: #c0c0c0; /**временно задал цвет, чтобы было видно белый текст**/
   background-size: 100% auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-/********************** заголовок страницы  *********************/
+.main_container{
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0;
+}
+
+.navigation{
+ display: flex;
+ width: 1060px;
+ margin: 0 auto;
+}
+
+/**********************Навигация хеддера*********************/
+.navigtion_list{
+  margin: 0;
+  padding: 0;
+}
+/**********************Навигация ЛОГО*********************/
+.navigation_link_logo{
+  margin-right: 30px;
+}
+/**********************Навигация первого списка хеддар*********************/
+.navigation_main{
+  width: 435px;
+}
+/**********************Навигация втрого списка хеддар*********************/
+.navigation_user{
+  width: 300px;
+  margin-left: auto;
+}
+/**********************Заголовок страницы*********************/
 .navigation_link {
   font-size: 20px;
   line-height: 26px;
@@ -43,19 +89,21 @@ body {
   text-decoration: none;
 }
 
+/**********************Кнопка "Хочу сюда" в хеддере*********************/
 .icon_button.navigation_link {
   color: #ffffff;
-  background-color: bisque; /*****времееная обводка цветом*****/
+  background-color: bisque; /*****Времееная обводка цветом*****/
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/********************** Бекграунд на Лого главного экрана  *********************/
+
+/**********************Бекграунд на Лого главного экрана*********************/
 .welcome_to_sedona{
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
 }
-/********************** Бекграунд на Лого главного экрана, белая  полоса внизу *********************/
+/**********************Бекграунд на Лого главного экрана, белая  полоса внизу*********************/
 .vector_index_background{
 background-image: url("../images/vector-index-background.svg");
 background-repeat: no-repeat;
@@ -63,7 +111,33 @@ background-position: bottom;
 width: 1200px;
 height: 485px;
 }
-/**********************выбор гостиниц*********************/
+
+.welcome_to_sedona_text{
+  width: 1200px;
+}
+.sedona_description{
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  width: 720px;
+  margin: auto;
+}
+.sedona_description_text{
+  font-size: 22px;
+  line-height: 36px;
+  color: #000000;
+  width: 720px;
+  margin: auto;
+}
+
+
+.description_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/**********************Выбор гостиниц*********************/
 .description_item_head {
   font-size: 24px;
   line-height: 28px;
@@ -71,9 +145,32 @@ height: 485px;
   color: #000000;
 }
 
-.description_item.color_iversion {
+.description_item{
+  width: 400px;
+  height: 384px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/**********************иконки ЖИЛЬЁ ЕДА СУВЕНИРЫ*********************/
+.description_icon{
+  margin:0 auto 0 auto;
+}
+.description_item_text{
+  width: 250px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+.color_iversion {
   color: #ffffff;
   background-color: #83b3d3;
+  display: flex;
+  width: 1200px;
+  height: 384px;
+}
+.item_color_iversion{
+  display: flex;
+  flex-direction:column;
 }
 
 /**********************Блок с поиском гостницы*********************/
@@ -101,6 +198,12 @@ height: 485px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 411px;
+
+}
+.distribution_container{
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 800px;
 }
 .distribution_title {
   font: size 30px;
@@ -114,7 +217,7 @@ height: 485px;
   color: #ffffff;
 }
 
-/**********************Кнопка Подписаться в низу страницы*********************/
+/**********************Кнопка Подписаться внизу страницы*********************/
 .distribution_form_input {
   width: 600px;
   height: 60px;
@@ -127,6 +230,26 @@ height: 485px;
   text-transform: uppercase;
   background-color: #83b3d3;
 }
+
+/**********************Footer*********************/
+.page_footer{
+  display: flex;
+  width: 1200px;
+  justify-content:space-between;
+  align-items: center;
+}
+.socials_footer{
+  padding-left: 72px;
+}
+.socials_footer_icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer_logo{
+  padding-right: 72px;
+}
+
 /**********************Номер телефона*********************/
 .phone_number {
   font-size: 40px;
@@ -134,6 +257,7 @@ height: 485px;
   color: #000000;
   text-decoration: none;
 }
+
 
 /**********************Каталог, вторая страница*********************/
 .catalog_hotel {
@@ -144,14 +268,26 @@ height: 485px;
 }
 
 /**********************Гостиницы Седоны h1*********************/
+.catalog_hotel_head{
+  display: flex;
+  flex-direction: column;
+}
 .inner_header_title {
   font-size: 60px;
   line-height: 78px;
   font-weight: bold;
+  width: 530px;
+  margin-left: 71px;
 }
 .breadcrumbs_item {
   font-size: 16px;
   line-height: 21px;
+  margin-left: 72px;
+  text-align: start;
+}
+/**********************Форма поиска по каталогу*********************/
+.catalog_find{
+  display: flex;
 }
 .catalog_title {
   font-size: 20px;
@@ -163,15 +299,6 @@ height: 485px;
   line-height: 23px;
 }
 
-/**********************Звёзды у гостиниц*********************/
-.star_list .star {
-  display: inline;
-}
-
-/**********************Значок дома (ссылка на главную страницу)*********************/
-.home_page {
-  text-decoration: none;
-}
 
 /**********************Кнопка применить форму*********************/
 .button_apply_form {
@@ -191,6 +318,16 @@ height: 485px;
   border: none;
 }
 /**********************Названия гостиниц*********************/
+.hotel_catalog{
+  width: 1056px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.hotel_card{
+  width: 340px;
+  height: 438px;
+}
 .hotel_card_title {
   font-weight: bold;
   font-size: 24px;
@@ -208,6 +345,41 @@ height: 485px;
   line-height: 23px;
 }
 
+/**********************Секция с сортровокой гостиниц по критериям*********************/
+.sorting{
+  display:flex;
+  width: 1057px;
+}
+.title_sorting{
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  width: 337px;
+  margin-left: 71px;
+  margin-right: 72px;
+}
+.select_control{
+  width: 287px;
+}
+.hotel_card_list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.hotel_card_description{
+  display: flex;
+  flex-direction: column;
+}
+/**********************Звёзды у гостиниц*********************/
+.star_list .star {
+  display: inline;
+}
+
+/**********************Значок дома (ссылка на главную страницу)*********************/
+.home_page {
+  text-decoration: none;
+}
 /**********************Кнопка подробнее*********************/
 .hotel_card_button_detail.button {
   background: #756257;
@@ -242,8 +414,18 @@ height: 485px;
   color: #f2f2f2;
   text-transform: uppercase;
   text-decoration: none;
-}
 
+}
+.pagination_bar{
+  width: 1056px;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.pagination{
+  display: flex;
+  flex-direction: row;
+}
 /**********************Рейтинг госиниц*********************/
 .star_score {
   font-size: 16px;
@@ -266,6 +448,8 @@ height: 485px;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
+  width: 620px;
+  padding: 17px 0;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #83b3d3;

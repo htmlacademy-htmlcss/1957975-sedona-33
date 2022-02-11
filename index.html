@@ -13,7 +13,7 @@
           <a class="navigation_link_logo" href="index.html">
             <img class="navigation_header_logo" src="./images/header-icon/logo.svg" width="139" height="70" alt="Логотип Седона.">
           </a>
-          <ul class="navigtion_list">
+          <ul class="navigtion_list navigation_main">
             <li class="navigation_item">
               <a class="navigation_link" href="#">Главная</a>
             </li>
@@ -43,107 +43,115 @@
       </header>
 
       <!--Лого главного экрана-->
-      <main class="main_index">
-        <section class="welcome_to_sedona">
-          <div class="vector_index_background">
-            <h1 class="visually_hidden">welcome</h1>
-            <img class="logo_sedona" src="./images/welcome.svg" width="458" height="352" alt="sedona.">
+      <main class="main_container main_index">
+        <div class="page_container">
+          <section class="welcome_to_sedona">
+            <div class="vector_index_background">
+              <h1 class="visually_hidden">welcome</h1>
+              <img class="logo_sedona" src="./images/welcome.svg" width="458" height="352" alt="sedona.">
+            </div>
+          </section>
+          <section class="welcome_to_sedona_text">
+            <h2 class="sedona_description">
+              Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="sedona_description_text">
+              Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </section>
+
+          <!-- основная информация Седоне -->
+          <section class="main_section">
+            <ul class="description_list">
+              <li class="color_iversion">
+                <div class="item_color_iversion">
+                  <h3 class="description_item_head">Настоящий городок</h3>
+                  <p class="description_item_text">— №1 —</p>
+                  <p class="description_item_text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img class="description_photo_1" src="./images/photo-1.jpg" width="800" height="384" alt="фотография города.">
+              </li>
+
+              <li class="description_item">
+                <img class="description_icon" src="./images/icon-1.svg" width="75" height="72" alt="иконка дома.">
+                <h3 class="description_item_head">Жильё</h3>
+                <p class="description_item_text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="description_item">
+                <img class="description_icon" src="./images/icon-2.svg"width="74" height="70" alt="иконка еды.">
+                <h3 class="description_item_head">Еда</h3>
+                <p class="description_item_text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="description_item">
+                <img class="description_icon" src="./images/icon-3.svg" width="67" height="76" alt="иконка подарков.">
+                <h3 class="description_item_head">Сувениры</h3>
+                <p class="description_item_text">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+
+              <li class="color_iversion">
+                <img class="description_photo_2" src="./images/photo-2.jpg" width="800" height="384" alt="фотография каньона.">
+                <div class="item_color_iversion">
+                  <h3 class="description_item_head">Там есть мост дьявола</h3>
+                  <p class="description_item_text">— №2 —</p>
+                  <p class="description_item_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+              </li>
+              <li class="description_item">
+                <h3 class="description_item_head">Небольшая площадь</h3>
+                <p class="description_item_text">— №3 —</p>
+                <p class="description_item_text">Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="description_item">
+                <h3 class="description_item_head">Красивая дорога</h3>
+                <p class="description_item_text">— №4 —</p>
+                <p class="description_item_text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="description_item">
+                <h3 class="description_item_head">Мало туристов</h3>
+                <p class="description_item_text">— №5 —</p>
+                <p class="description_item_text">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- Блок с поиском гостницы -->
+          <section class="finde_hostle">
+            <h2 class="finde_hostle_title">Заинтересовались?</h2>
+            <p class="finde_hostle_text">
+              Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+              <button class="button_finde_hostle">Поиск гостиницы в седоне!</button>
+          </section>
+
+          <!-- Блок с рассылкой на почту -->
+          <section class="distribution">
+            <div class="distribution_mail">
+              <h2 class="distribution_title">Подпишитесь на рассылку</h2>
+              <p class="distribution_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+
+              <form class="distribution_form" action="https://echo.htmlacademy.ru/" method="post">
+                <input type="email" placeholder="Ваш e-mail" required>
+                <button class="distribution_form_buttons">Подписаться</button>
+              </form>
           </div>
-        </section>
-        <section class="welcome_to_sedona_text">
-          <h2 class="sedona_description">
-            Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="sedona_description_text">
-            Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        </section>
-
-        <!-- основная информация Седоне -->
-        <section class="main_section">
-          <ul class="description_list">
-            <li class="description_item color_iversion">
-              <h3 class="description_item_head">Настоящий городок</h3>
-              <p class="description_item_text">— №1 —</p>
-              <p class="description_item_text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              <img class="description_photo_1" src="./images/photo-1.jpg" width="800" height="384" alt="фотография города.">
-            </li>
-
-            <li class="description_item">
-              <img class="description_icon" src="./images/icon-1.svg" width="75" height="72" alt="иконка дома.">
-              <h3 class="description_item_head">Жильё</h3>
-              <p class="description_item_text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="description_item">
-              <img class="description_icon" src="./images/icon-2.svg"width="74" height="70" alt="иконка еды.">
-              <h3 class="description_item_head">Еда</h3>
-              <p class="description_item_text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="description_item">
-              <img class="description_icon" src="./images/icon-3.svg" width="67" height="76" alt="иконка подарков.">
-              <h3 class="description_item_head">Сувениры</h3>
-              <p class="description_item_text">Не только китайского, но и настоящего местного производства!</p>
-            </li>
-
-            <li class="description_item color_iversion">
-              <img class="description_photo_2" src="./images/photo-2.jpg" width="800" height="384" alt="фотография каньона.">
-              <h3 class="description_item_head">Там есть мост дьявола</h3>
-              <p class="description_item_text">— №2 —</p>
-              <p class="description_item_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            </li>
-            <li class="description_item">
-              <h3 class="description_item_head">Небольшая площадь</h3>
-              <p class="description_item_text">— №3 —</p>
-              <p class="description_item_text">Все достопримечательности находятся очень близко</p>
-            </li>
-            <li class="description_item">
-              <h3 class="description_item_head">Красивая дорога</h3>
-              <p class="description_item_text">— №4 —</p>
-              <p class="description_item_text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li class="description_item">
-              <h3 class="description_item_head">Мало туристов</h3>
-              <p class="description_item_text">— №5 —</p>
-              <p class="description_item_text">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Блок с поиском гостницы -->
-        <section class="finde_hostle">
-          <h2 class="finde_hostle_title">Заинтересовались?</h2>
-          <p class="finde_hostle_text">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="button_finde_hostle">Поиск гостиницы в седоне!</button>
-        </section>
-
-        <!-- Блок с рассылкой на почту -->
-        <section class="distribution">
-          <h2 class="distribution_title">Подпишитесь на рассылку</h2>
-          <p class="distribution_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-
-          <form class="distribution_form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" placeholder="Ваш e-mail" required>
-            <button class="distribution_form_buttons">Подписаться</button>
-          </form>
-        </section>
+          </section>
+        </div>
       </main>
 
       <!--подвал страницы-->
       <footer class="page_footer">
         <ul class="socials_footer">
           <li>
-            <img class="socials_footer twitter" src="./images/socials-icon/icon-twitter.svg" width="18" height="15" alt="твиттер.">
+            <img class="socials_footer_icon twitter" src="./images/socials-icon/icon-twitter.svg" width="18" height="15" alt="твиттер.">
             <a class="twitter_button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually_hidden">твиттер</span>
             </a>
           </li>
           <li>
-            <img class="socials_footer facebook" src="./images/socials-icon/icon-facebook.svg" width="10" height="18" alt="фейсбук.">
+            <img class="socials_footer_icon facebook" src="./images/socials-icon/icon-facebook.svg" width="10" height="18" alt="фейсбук.">
             <a class="facebook_button" href=" https://www.facebook.com/htmlacademy">
               <span class="visually_hidden">фейсбук</span>
             </a>
           </li>
           <li>
-            <img class="socials_footer youtube" src="./images/socials-icon/icon-youtube.svg" width="20" height="16" alt="ютую.">
+            <img class="socials_footer_icon youtube" src="./images/socials-icon/icon-youtube.svg" width="20" height="16" alt="ютую.">
             <a class="youtube_button" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually_hidden">ютуб</span>
             </a>
