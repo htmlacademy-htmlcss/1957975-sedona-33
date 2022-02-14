@@ -1,11 +1,11 @@
-@font-face {
+@font-face{
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
 }
-@font-face {
+@font-face{
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-family: "PT Sans";
   font-style: normal;
@@ -17,7 +17,7 @@ html{
   height: 100%;
 }
 
-body {
+body{
   margin: 0;
   height: 100%;
   font-family: "PT Sans", sans-serif;
@@ -33,15 +33,30 @@ body {
   margin-right: auto;
 }
 
-ul{
+ul.description_list{
   margin-left: 0;
   padding-left: 0
 }
-li{
+ul.hotel_card_list{
+  margin-left: 0;
+  padding-left: 0
+}
+li.hotel_card{
   list-style-type:none;
 }
-.shadow_page {
-  background-color: #c0c0c0; /**временно задал цвет, чтобы было видно белый текст**/
+li.navigation_item{
+  list-style-type:none;
+}
+li.calatlig_filter_item{
+  list-style-type:none;
+}
+
+li.pagination_item{
+  list-style-type:none;
+}
+
+.shadow_page{
+  background-color: #ffffff;
   background-size: 100% auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
@@ -74,14 +89,16 @@ li{
 /**********************Навигация первого списка хеддар*********************/
 .navigation_main{
   width: 435px;
+  text-align: start;
 }
 /**********************Навигация втрого списка хеддар*********************/
 .navigation_user{
   width: 300px;
   margin-left: auto;
+  text-align: start;
 }
 /**********************Заголовок страницы*********************/
-.navigation_link {
+.navigation_link{
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -90,13 +107,12 @@ li{
 }
 
 /**********************Кнопка "Хочу сюда" в хеддере*********************/
-.icon_button.navigation_link {
+.icon_button.navigation_link{
   color: #ffffff;
-  background-color: bisque; /*****Времееная обводка цветом*****/
+  background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
 }
-
 
 /**********************Бекграунд на Лого главного экрана*********************/
 .welcome_to_sedona{
@@ -104,13 +120,7 @@ li{
   background-repeat: no-repeat;
 }
 /**********************Бекграунд на Лого главного экрана, белая  полоса внизу*********************/
-.vector_index_background{
-background-image: url("../images/vector-index-background.svg");
-background-repeat: no-repeat;
-background-position: bottom;
-width: 1200px;
-height: 485px;
-}
+
 
 .welcome_to_sedona_text{
   width: 1200px;
@@ -131,14 +141,13 @@ height: 485px;
   margin: auto;
 }
 
-
 .description_list{
   display: flex;
   flex-wrap: wrap;
 }
 
 /**********************Выбор гостиниц*********************/
-.description_item_head {
+.description_item_head{
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -147,7 +156,6 @@ height: 485px;
 
 .description_item{
   width: 400px;
-  height: 384px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,7 +169,7 @@ height: 485px;
   margin-left: 75px;
   margin-right: 75px;
 }
-.color_iversion {
+.color_iversion{
   color: #ffffff;
   background-color: #83b3d3;
   display: flex;
@@ -174,13 +182,13 @@ height: 485px;
 }
 
 /**********************Блок с поиском гостницы*********************/
-.finde_hostle_title {
+.finde_hostle_title{
   font: size 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
 }
-.finde_hostle_text {
+.finde_hostle_text{
   font-size: 22px;
   line-height: 26px;
 }
@@ -193,7 +201,7 @@ height: 485px;
 }
 
 /********************** Блок с рассылкой на почту *********************/
-.distribution {
+.distribution{
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -205,25 +213,25 @@ height: 485px;
   margin-right: 200px;
   width: 800px;
 }
-.distribution_title {
-  font: size 30px;
+.distribution_title{
+  font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
 }
-.distribution_text {
+.distribution_text{
   font-size: 22px;
   line-height: 26px;
   color: #ffffff;
 }
 
 /**********************Кнопка Подписаться внизу страницы*********************/
-.distribution_form_input {
+.distribution_form_input{
   width: 600px;
   height: 60px;
   background: #f2f2f2;
 }
-.distribution_form_buttons {
+.distribution_form_buttons{
   font-size: 20px;
   line-height: 26px;
   color: #ffffff;
@@ -251,16 +259,15 @@ height: 485px;
 }
 
 /**********************Номер телефона*********************/
-.phone_number {
+.phone_number{
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
 }
 
-
 /**********************Каталог, вторая страница*********************/
-.catalog_hotel {
+.catalog_hotel{
   background-image: url("../images/catalog-background-1.jpg");
   background-repeat: no-repeat;
   height: 408px;
@@ -272,14 +279,14 @@ height: 485px;
   display: flex;
   flex-direction: column;
 }
-.inner_header_title {
+.inner_header_title{
   font-size: 60px;
   line-height: 78px;
   font-weight: bold;
   width: 530px;
   margin-left: 71px;
 }
-.breadcrumbs_item {
+.breadcrumbs_item{
   font-size: 16px;
   line-height: 21px;
   margin-left: 72px;
@@ -289,19 +296,19 @@ height: 485px;
 .catalog_find{
   display: flex;
 }
-.catalog_title {
+.catalog_title{
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
 }
-.calatlig_filter_item {
+.calatlig_filter_item{
   font-size: 18px;
   line-height: 23px;
+  text-align: start;
 }
 
-
 /**********************Кнопка применить форму*********************/
-.button_apply_form {
+.button_apply_form{
   background: #83b3d3;
   color: #ffffff;
   text-transform: uppercase;
@@ -310,7 +317,7 @@ height: 485px;
 }
 
 /**********************Кнопка сбросить форму*********************/
-.button_reset_form {
+.button_reset_form{
   color: #ffffff;
   font-size: 18px;
   line-height: 23px;
@@ -326,21 +333,20 @@ height: 485px;
 
 .hotel_card{
   width: 340px;
-  height: 438px;
 }
-.hotel_card_title {
+.hotel_card_title{
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
   text-decoration: none;
 }
-.span_hotel .hotel_card_price {
+.span_hotel .hotel_card_price{
   font-size: 18px;
   line-height: 23px;
 }
 
-.checkbox .radio .range {
+.checkbox .radio .range{
   font-size: 18px;
   line-height: 23px;
 }
@@ -365,23 +371,20 @@ height: 485px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content:space-between;
 }
 
 .hotel_card_description{
   display: flex;
   flex-direction: column;
 }
-/**********************Звёзды у гостиниц*********************/
-.star_list .star {
-  display: inline;
-}
 
 /**********************Значок дома (ссылка на главную страницу)*********************/
-.home_page {
+.home_page{
   text-decoration: none;
 }
 /**********************Кнопка подробнее*********************/
-.hotel_card_button_detail.button {
+.hotel_card_button_detail.button{
   background: #756257;
   border-radius: 4px;
   padding: 9px 15px 10px 15px;
@@ -394,7 +397,7 @@ height: 485px;
 }
 
 /**********************Кнопка в избранное*********************/
-.hotel_card_button_select.button {
+.hotel_card_button_select.button{
   background: #83b3d3;
   border-radius: 4px;
   padding: 9px 15px 10px 15px;
@@ -407,7 +410,7 @@ height: 485px;
 }
 
 /**********************Страницы с гостиницами*********************/
-.pagination_item {
+.pagination_item{
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -427,24 +430,24 @@ height: 485px;
   flex-direction: row;
 }
 /**********************Рейтинг госиниц*********************/
-.star_score {
+.star_score{
   font-size: 16px;
   line-height: 21px;
   background: #f2f2f2;
 }
 
 /**********************Переключение страниц 1,2,3,4 ...*********************/
-.pagination_link.pagination_current {
+.pagination_link.pagination_current{
   background: #f2f2f2;
   color: #000000;
 }
-.pagination_link {
+.pagination_link{
   background: #83b3d3;
   color: #ffffff;
 }
 
 /**********************Кнопка загрузить еще*********************/
-.pagination_show_more {
+.pagination_show_more{
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
@@ -456,10 +459,10 @@ height: 485px;
 }
 
 /**********************НАЧАЛО Блок с рассылкой на почту второй страницы *********************/
-.distribution_inner {
+.distribution_inner{
   background-color: #ffffff;
 }
-.distribution_title_inner {
+.distribution_title_inner{
   font-size: 30px;
   line-height: 36px;
   color: #000000;
