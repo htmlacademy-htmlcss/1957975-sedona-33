@@ -28,12 +28,14 @@
           <!-- 2й список ссылок в заголовке страницы -->
           <ul class="navigtion_list navigation_user">
             <li class="navigation_item">
-              <img class="search" src="./images/header-icon/search.svg" width="18" height="18" alt="Поиск."></a>
+              <a class="navigation_link" href="#">
               <span class="visually_hidden">Поиск</span>
+              </a>
             </li>
             <li class="navigation_item">
-              <img class="favorite" src="./images/header-icon/favorite.svg" width="18" height="17" alt="Избранное."></a>
+              <a class="navigation_link" href="#">
               <span class="visually_hidden">Избранное</span>
+              </a>
             </li>
             <li class="navigation_item">
               <a class="icon_button navigation_link" href="#">Хочу сюда!</a>
@@ -48,10 +50,7 @@
           <div class="catalog_hotel_head">
             <h1 class="inner_header_title">Гостиницы Седоны</h1>
             <div class="breadcrumbs_item">
-              <a class="home_page" href="index.html" >
-                <img class="home" src="./images/home-1.svg" width="12" height="12" alt="ссылка на главную странцу." >
-              </a>
-              <img class="vector" src="./images/vector.svg" width="5" height="8" alt="стрелочка.">
+              <a class="home_page" href="index.html"></a>
               <span class="breadcrumbs_item_hotel">Гостиницы</span>
             </div>
           </div>
@@ -119,16 +118,22 @@
 
         <!--Секция с сортровокой гостиниц по критериям-->
         <div class="sorting">
-          <h2 class="title_sorting">Найдено гостиниц: 38</h2>
+          <h2 class="title_sorting">Найдено гостиниц:38</h2>
           <select class="select_control" aria-label="Сортировка">
             <option value="cheap" selected>Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
           <div class="sorting_list">
+            <a href="#" class="button dark">
             <span class="visually_hidden">Показать плиткой</span>
+            </a>
+            <a href="#" class="button" >
             <span class="visually_hidden">Показать слайдом</span>
+            </a>
+            <a href="#" class="button" >
             <span class="visually_hidden">Показать список</span>
+            </a>
           </div>
         </div>
 
@@ -193,7 +198,7 @@
           </ul>
 
           <!--кнопка загрузить еще варианты гостиниц-->
-          <button class="pagination_show_more button">Загрузить еще</button>
+          <button class="pagination_show_more_button">Загрузить еще</button>
 
           <div class="pagination_bar">
             <ul class="pagination">
@@ -213,19 +218,16 @@
                 <a class="pagination_link" href="#">...</a>
               </li>
               <li class="pagination_item">
-                <a class="pagination_link pagination_next" href="#">
-                  <span class="visually_hidden">10</span>
-                </a>
+                <a class="pagination_link" href="#">10</a>
               </li>
             </ul>
             <!--список показывающий количество гостиниц на странице-->
-            <label class="select_list">Гостиниц на странице:
-              <select class="select_control" name="Гостиниц на странице" aria-label="Сортировка">
-                <option value="cheap" selected>4</option>
-                <option value="expensive">6</option>
-                <option value="popular">8</option>
-              </select>
-            </label>
+            <label for="hotle" class="select_list">Гостиниц на странице:</label>
+            <select class="select_control" name="hotle" aria-label="Сортировка">
+              <option value="cheap" selected>4</option>
+              <option value="expensive">6</option>
+              <option value="popular">8</option>
+            </select>
           </div>
         </section>
 
@@ -244,20 +246,17 @@
       <!--подвал страницы-->
       <footer class="page_footer">
         <ul class="socials_footer">
-          <li>
-            <img class="socials_footer twitter" src="./images/socials-icon/icon-twitter.svg" width="18" height="15" alt="твиттер.">
+          <li class="socials_footer_icon">
             <a class="button" href="https://twitter.com/htmlacademy_ru">
               <span class="visually_hidden">твиттер</span>
             </a>
           </li>
-          <li>
-            <img class="socials_footer facebook" src="./images/socials-icon/icon-facebook.svg" width="10" height="18" alt="фейсбук.">
+          <li class="socials_footer_icon">
             <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually_hidden">фейсбук</span>
             </a>
           </li>
-          <li>
-            <img class="socials_footer youtube" src="./images/socials-icon/icon-youtube.svg" width="20" height="16" alt="ютую.">
+          <li class="socials_footer_icon">
             <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
               <span class="visually_hidden">ютуб</span>
             </a>
