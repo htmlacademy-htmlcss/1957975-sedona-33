@@ -50,22 +50,19 @@ ul.description_list{
 }
 ul.hotel_card_list{
   margin-left: 0;
-  padding-left: 0
+  padding-left: 0;
+  list-style-type: none;
 }
-li.hotel_card{
+ul.catalog_filter_list{
+  list-style-type:none;
+}
+ul.pagination{
+  list-style-type:none;
+}
+ul.socials_footer{
   list-style-type:none;
 }
 
-li.calatlig_filter_item{
-  list-style-type:none;
-}
-
-li.pagination_item{
-  list-style-type:none;
-}
-li.socials_footer_icon{
-  list-style-type:none;
-}
 .shadow_page{
   background-color: #ffffff;
   background-size: 100% auto;
