@@ -180,6 +180,10 @@ ul.socials_footer{
   text-transform: uppercase;
   color: #000000;
 }
+.description_item_head:nth-child(2){
+  background-color: #ffffff;
+}
+
 .description_item{
   width: 400px;
   display: flex;
@@ -256,9 +260,27 @@ ul.socials_footer{
 }
 
 /**********************Кнопка Подписаться внизу страницы*********************/
+.distribution_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .distribution_form_input{
   background: #f2f2f2;
   margin-bottom: 94px;
+  width: 600px;
+  height: 60px;
+  left: calc(50% - 600px/2 + 500px);
+  bottom: 261px;
+  text-align: center;
+  margin: 0;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: start;
+  padding-left: 22px;
+  border-top-left-radius:10px ;
+  border-bottom-left-radius: 10px;
 }
 .distribution_form_buttons{
   font-size: 20px;
@@ -266,6 +288,11 @@ ul.socials_footer{
   color: #ffffff;
   text-transform: uppercase;
   background-color: #83b3d3;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 200px;
+  height: 62px;
 }
 
 /**********************Footer*********************/
@@ -315,6 +342,7 @@ ul.socials_footer{
   background-repeat: no-repeat;
   height: 408px;
   color: #ffffff;
+
 }
 
 /**********************Гостиницы Седоны h1*********************/
@@ -324,8 +352,9 @@ ul.socials_footer{
   font-weight: bold;
   width: 530px;
   margin-left: 71px;
-  margin-top: 35px;
-  margin-bottom: 0;
+  margin: 0;
+  padding-top:20px;
+  padding-left: 35px;
 }
 .breadcrumbs_item_hotel{
   margin-left: 10px;
@@ -337,8 +366,29 @@ ul.socials_footer{
   text-align: start;
 }
 /**********************Форма поиска по каталогу*********************/
-.catalog_find{
+ .catalog_find{
+  text-align: start;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+
+}
+.infrastructure_form{
+  margin-top:41px;
+  margin-left:71px;
+}
+.type_of_housing_form{
+  margin-top: 41px;
+}
+.cost_form{
+  margin-top:41px;
   display: flex;
+  flex-direction: column;
+}
+.infrastructure_list{
+  padding: 0;
+}
+.type_of_housing_list{
+  padding:0;
 }
 .catalog_title{
   font-size: 20px;
@@ -349,22 +399,41 @@ ul.socials_footer{
   font-size: 18px;
   line-height: 23px;
   text-align: start;
+  padding-bottom: 13px;
 }
 
 .button_form{
   display: flex;
   flex-direction: column;
-
+}
+.checkbox_form{
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+.radio_form{
+  width: 20px;
+  height: 20px;
 }
 /**********************Кнопка применить форму*********************/
+.button_form{
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  border:none;
+}
+
 .button_apply_form{
   background: #83b3d3;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 21px;
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  border-radius: 4px;
 }
-
 /**********************Кнопка сбросить форму*********************/
 .button_reset_form{
   color: #ffffff;
@@ -372,6 +441,8 @@ ul.socials_footer{
   line-height: 23px;
   background: transparent;
   border: none;
+  text-align: center;
+  padding-top: 20px;
 }
 /**********************Названия гостиниц*********************/
 .hotel_catalog{
@@ -379,9 +450,9 @@ ul.socials_footer{
   margin-left: 70px;
   margin-right: 70px;
 }
-
 .hotel_card{
-  width: 340px;
+  width: 300px;
+  padding: 20px;
 }
 .hotel_card_title{
   font-weight: bold;
@@ -394,12 +465,27 @@ ul.socials_footer{
   font-size: 18px;
   line-height: 23px;
 }
-
+.hotel_card_description_text{
+  display: grid;
+  grid-template-columns: 133px 133px;
+  gap:25px;
+}
 .checkbox .radio .range{
   font-size: 18px;
   line-height: 23px;
 }
-
+.hotel_catalog_button{
+  display: flex;
+}
+.hotel_card_button_detail{
+  margin-right:26px;
+  width: 133px;
+  border:none;
+}
+.hotel_card_button_select{
+  width: 133px;
+  border:none;
+}
 /**********************Секция с сортровокой гостиниц по критериям*********************/
 .sorting{
   display:flex;
@@ -424,8 +510,6 @@ ul.socials_footer{
   font-size: 18px;
   line-height: 23px;
   margin-right: 50px;
-
-
 }
 .select_control{
   width: 160px;
@@ -436,14 +520,14 @@ ul.socials_footer{
   margin-right: 81px;
   margin-top: 3px;
   margin-bottom: 3px;
-
 }
 
 .hotel_card_list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content:space-between;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns:340px 340px 340px;
+  gap:17px;
 }
 
 .sorting_list{
@@ -459,8 +543,10 @@ ul.socials_footer{
 }
 
 .hotel_card_description{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  gap: 15px;
+  justify-content: start;
+  text-align: start;
 }
 
 /**********************Значок дома (ссылка на главную страницу)*********************/
@@ -473,7 +559,8 @@ ul.socials_footer{
 .hotel_card_button_detail.button{
   background: #756257;
   border-radius: 4px;
-  padding: 9px 15px 10px 15px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -486,7 +573,8 @@ ul.socials_footer{
 .hotel_card_button_select.button{
   background: #83b3d3;
   border-radius: 4px;
-  padding: 9px 15px 10px 15px;
+  padding-top: 9px;
+  padding-bottom: 10px;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
@@ -526,9 +614,16 @@ ul.socials_footer{
 
 /**********************Рейтинг госиниц*********************/
 .star_score{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
   line-height: 21px;
   background: #f2f2f2;
+  text-transform: uppercase;
+  color: #333333;
+  width: 160px;
+  height: 37px;
 }
 
 /**********************Переключение страниц 1,2,3,4 ...*********************/
@@ -544,16 +639,21 @@ ul.socials_footer{
   text-transform: uppercase;
   line-height: 26px;
   width: 620px;
-  padding: 30px 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: #000000 solid 1px;
-  border-right-style: none;
-  border-left-style: none;
+  padding: 17px 0;
   color: #ffffff;
   background-color: #83b3d3;
+  border-radius: 4px;
+  border: none;
+  margin: 20px 0;
 }
 
+.pagination_show_more_button_decor{
+  border: 1px solid #E6E6E6;
+  transform: rotate(0deg);
+  border-right-style: none;
+  border-left-style: none;
+  margin-bottom: 30px;
+}
 /**********************НАЧАЛО Блок с рассылкой на почту второй страницы *********************/
 .distribution_inner{
   background: #FFFFFF;

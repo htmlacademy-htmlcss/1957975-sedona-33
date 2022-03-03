@@ -57,57 +57,61 @@
 
           <!--форма выбора отелей-->
           <form class="catalog_find" action="https://echo.htmlacademy.ru/courses" method="get">
-            <fieldset class="catalog_filter_hotel">
-              <legend class="catalog_title">Инфраструктура:</legend>
-              <ul class="catalog_filter_list">
+            <div class="catalog_filter_hotel infrastructure_form">
+              <span class="catalog_title infrastructure">Инфраструктура:</span>
+              <ul class="catalog_filter_list infrastructure_list">
                 <li class="calatlig_filter_item">
-                  <label class="checkbox">Бассейн
-                    <input type="checkbox" name="Бассейн" checked>
+                  <label class="checkbox">
+                    <input class="checkbox_form" type="checkbox" name="Бассейн" checked>
+                    Бассейн
                   </label>
                 </li>
                 <li class="calatlig_filter_item">
-                  <label class="checkbox">Парковка
-                    <input type="checkbox" name="Парковка" checked>
+                  <label class="checkbox">
+                    <input class="checkbox_form" type="checkbox" name="Парковка" checked>
+                    Парковка
                   </label>
                 </li>
                 <li class="calatlig_filter_item">
-                  <label class="checkbox">Wi-Fi
-                    <input type="checkbox" name="Wi-Fi">
+                  <label class="checkbox">
+                    <input class="checkbox_form" type="checkbox" name="Wi-Fi">
+                    Wi-Fi
                   </label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
 
-            <fieldset class="catalog_filter_hotel">
-              <legend class="catalog_title">Тип жилья:</legend>
-              <ul class="catalog_filter_list">
+            <div class="catalog_filter_hotel type_of_housing_form">
+              <span class="catalog_title type_of_housing">Тип жилья:</span>
+              <ul class="catalog_filter_list type_of_housing_list">
                 <li class="calatlig_filter_item">
                   <lable class="radio">
-                    <input type="radio" name="Тип жилья:" value="Гостиница" checked>
+                    <input class="radio_form" type="radio" name="Тип жилья:" value="Гостиница" checked>
                     Гостиница
                   </lable>
                 </li>
                 <li class="calatlig_filter_item">
                   <lable class="radio">
-                    <input type="radio" name="Тип жилья:" value="Мотель">
+                    <input class="radio_form" type="radio" name="Тип жилья:" value="Мотель">
                     Мотель
                   </lable>
                 </li>
                 <li class="calatlig_filter_item">
                   <lable class="radio">
-                    <input type="radio" name="Тип жилья:" value="Апартаменты">
+                    <input class="radio_form" type="radio" name="Тип жилья:" value="Апартаменты">
                     Апартаменты
                   </lable>
                 </li>
               </ul>
-            </fieldset>
+            </div>
 
-            <fieldset class="catalog_filter_hotel">
-              <legend class="catalog_title">Стоимость, ₽:</legend>
+            <div class="catalog_filter_hotel cost_form">
+              <span class="catalog_title cost">Стоимость, ₽:</span>
               <label>
                 0 <input type="range" name="price" min="0" max="9000" step="1"> 9000
+
               </label>
-            </fieldset>
+            </div>
 
             <div class="button_form">
               <button class="button_apply_form">Применить</button>
@@ -146,10 +150,14 @@
                 <h3 class="hotel_card_title">Amara Resort & Spa</h3>
               </a>
               <div class="hotel_card_description">
-                <span class="span_hotel">Гостиница</span>
-                <span class="hotel_card_price">От 4000 ₽</span>
-                <a class="hotel_card_button_detail button" href="#">Подробнее</a>
-                <a class="hotel_card_button_select button" href="#">В Избранное</a>
+                <div class="hotel_card_description_text">
+                  <span class="span_hotel">Гостиница</span>
+                  <span class="hotel_card_price">От 4000 ₽</span>
+                </div>
+                <div class="hotel_catalog_button">
+                  <button class="hotel_card_button_detail button">Подробнее</button>
+                  <button class="hotel_card_button_select button">В Избранное</button>
+              </div>
                 <spasn class="star_score">Рейтинг: 8,5</spasn>
               </div>
             </li>
@@ -160,10 +168,14 @@
                 <h3 class="hotel_card_title">Desert Quail Inn</h3>
               </a>
               <div class="hotel_card_description">
-                <span class="span_hotel">Гостиница</span>
-                <span class="hotel_card_price">От 3000 ₽</span>
-                <a class="hotel_card_button_detail button" href="#">Подробнее</a>
-                <a class="hotel_card_button_select button" href="#">В Избранное</a>
+                <div class="hotel_card_description_text">
+                  <span class="span_hotel">Гостиница</span>
+                  <span class="hotel_card_price">От 3000 ₽</span>
+                </div>
+                <div class="hotel_catalog_button">
+                  <button class="hotel_card_button_detail button">Подробнее</button>
+                  <button class="hotel_card_button_select button">В Избранное</button>
+              </div>
                 <span class="star_score">Рейтинг: 8,9</span>
               </div>
             </li>
@@ -174,10 +186,14 @@
                 <h3 class="hotel_card_title">Villas at Poco Diablo</h3>
               </a>
               <div class="hotel_card_description">
-                <span class="span_hotel">Гостиница</span>
-                <span class="hotel_card_price">От 2000 ₽</span>
-                <a class="hotel_card_button_detail button" href="#">Подробнее</a>
-                <a class="hotel_card_button_select button" href="#">В Избранное</a>
+                <div class="hotel_card_description_text">
+                  <span class="span_hotel">Гостиница</span>
+                  <span class="hotel_card_price">От 2000 ₽</span>
+                </div>
+                <div class="hotel_catalog_button">
+                  <button class="hotel_card_button_detail button">Подробнее</button>
+                  <button class="hotel_card_button_select button">В Избранное</button>
+               </div>
                 <span class="star_score">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -188,17 +204,23 @@
                 <h3 class="hotel_card_title">GreenTree Inn</h3>
               </a>
               <div class="hotel_card_description">
-                <span class="span_hotel">Гостиница</span>
-                <span class="hotel_card_price">От 3000 ₽</span>
-                <a class="hotel_card_button_detail button" href="#">Подробнее</a>
-                <a class="hotel_card_button_select button" href="#">В Избранное</a>
+                <div class="hotel_card_description_text">
+                  <span class="span_hotel">Гостиница</span>
+                  <span class="hotel_card_price">От 3000 ₽</span>
+                </div>
+                <div class="hotel_catalog_button">
+                  <button class="hotel_card_button_detail button">Подробнее</button>
+                  <button class="hotel_card_button_select button">В Избранное</button>
+                </div>
                 <span class="star_score">Рейтинг: 9,2</span>
               </div>
             </li>
           </ul>
 
           <!--кнопка загрузить еще варианты гостиниц-->
-          <button class="pagination_show_more_button">Загрузить еще</button>
+          <div class="pagination_show_more_button_decor">
+            <button class="pagination_show_more_button">Загрузить еще</button>
+          </div>
 
           <div class="pagination_bar">
             <ul class="pagination">
