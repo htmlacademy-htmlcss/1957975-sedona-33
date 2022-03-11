@@ -14,26 +14,30 @@
             <img class="navigation_header_logo" src="./images/header-icon/logo.svg" width="139" height="70" alt="Логотип Седона.">
           </a>
           <ul class="navigtion_list navigation_main">
-            <li class="navigation_item">
-              <a class="navigation_link" href="#">Главная</a>
+            <li class="navigation_item navigation_link_one">
+              <a class="navigation_link navigation_link_point" href="#">Главная</a>
             </li>
-            <li class="navigation_item">
-              <a class="navigation_link" href="#">О Седоне</a>
+            <li class="navigation_item navigation_link_one">
+              <a class="navigation_link navigation_link_point" href="#">О Седоне</a>
             </li>
-            <li class="navigation_item">
-              <a class="navigation_link" href="#">Гостиницы</a>
+            <li class="navigation_item navigation_link_one">
+              <a class="navigation_link navigation_link_point" href="#">Гостиницы</a>
             </li>
           </ul>
 
           <!-- 2й список ссылок в заголовке страницы -->
           <ul class="navigtion_list navigation_user">
-            <li class="navigation_item">
-              <span class="visually_hidden">Поиск</span>
+            <li class="navigation_item navigation_link_two">
+              <a class="navigation_link" href="#">
+                <span class="visually_hidden">Поиск</span>
+              </a>
             </li>
-            <li class="navigation_item">
-              <span class="visually_hidden">Избранное</span>
+            <li class="navigation_item navigation_link_two">
+              <a class="navigation_link" href="#">
+                <span class="visually_hidden">Избранное</span>
+              </a>
             </li>
-            <li class="navigation_item">
+            <li class="navigation_item navigation_link_two">
               <a class="icon_button navigation_link" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -43,9 +47,10 @@
       <!--Лого главного экрана-->
       <main class="main_container main_index">
         <section class="welcome_to_sedona">
-          <div class="vector_index_background">
+          <div >
             <h1 class="visually_hidden">welcome</h1>
             <img class="logo_sedona" src="./images/welcome.svg" width="458" height="352" alt="sedona.">
+            <div class="vector_index_background"></div>
           </div>
         </section>
         <section class="welcome_to_sedona_text">
@@ -67,41 +72,44 @@
               <img class="description_photo_1" src="./images/photo-1.jpg" width="800" height="384" alt="фотография города.">
             </li>
 
-            <li class="description_item">
-              <h3 class="description_item_head">Жильё</h3>
-              <p class="description_item_text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
+            <li class="description_item_list light12">
+              <img class="description_item" src="./images/icon-1.svg"  width="75" height="72" alt="иконка дома.">
+              <h3 class="description_item_head description_head_first">Жильё</h3>
+              <p class="description_item_text description_item_first">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="description_item">
-              <h3 class="description_item_head">Еда</h3>
-              <p class="description_item_text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <li class="description_item_list">
+              <img class="description_item" src="./images/icon-2.svg"  width="74" height="70" alt="иконка еды.">
+              <h3 class="description_item_head description_head_first">Еда</h3>
+              <p class="description_item_text description_item_first">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="description_item">
-              <h3 class="description_item_head">Сувениры</h3>
-              <p class="description_item_text">Не только китайского, но и настоящего местного производства!</p>
+            <li class="description_item_list light12">
+              <img class="description_item" src="./images/icon-3.svg"  width="64" height="76" alt="иконка сувениров.">
+              <h3 class="description_item_head description_head_first">Сувениры</h3>
+              <p class="description_item_text description_item_first">Не только китайского, но и настоящего местного производства!</p>
             </li>
 
             <li class="color_iversion">
               <img class="description_photo_2" src="./images/photo-2.jpg" width="800" height="384" alt="фотография каньона.">
               <div class="item_color_iversion">
-                <h3 class="description_item_head color_iversion_head"">Там есть мост дьявола</h3>
-                <p class="description_item_text color_iversion_item_text_number">— №2 —</p>
-                <p class="description_item_text color_iversion_item_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                <h3 class="description_item_head color_iversion_head">Там есть мост дьявола</h3>
+                <p class="description_item_text number color_iversion_item_text_number">— №2 —</p>
+                <p class="description_item_text description_item_text_second color_iversion_item_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
-            <li class="description_item">
-              <h3 class="description_item_head">Небольшая площадь</h3>
-              <p class="description_item_text">— №3 —</p>
-              <p class="description_item_text">Все достопримечательности находятся очень близко</p>
+            <li class="description_item light12">
+              <h3 class="description_item_head description_head_second">Небольшая<br>площадь</h3>
+              <p class=" number">— №3 —</p>
+              <p class="description_item_text description_item_text_second">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="description_item">
-              <h3 class="description_item_head">Красивая дорога</h3>
-              <p class="description_item_text">— №4 —</p>
-              <p class="description_item_text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h3 class="description_item_head description_head_second">Красивая<br>дорога</h3>
+              <p class=" number number1">— №4 —</p>
+              <p class="description_item_text description_item_text_second">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="description_item">
-              <h3 class="description_item_head">Мало туристов</h3>
-              <p class="description_item_text">— №5 —</p>
-              <p class="description_item_text">Большинство едет в Гранд Каньон и толпится там</p>
+            <li class="description_item light12">
+              <h3 class="description_item_head description_head_second">Мало<br>туристов</h3>
+              <p class=" number">— №5 —</p>
+              <p class="description_item_text description_item_text_second">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
         </section>
@@ -132,24 +140,25 @@
       <footer class="page_footer">
         <ul class="socials_footer">
           <li class="socials_footer_icon">
-            <a class="twitter_button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually_hidden">твиттер</span>
+            <a class="socials_footer_link youtube_button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <span class="visually_hidden">ютуб</span>
             </a>
           </li>
           <li class="socials_footer_icon">
-            <a class="facebook_button" href=" https://www.facebook.com/htmlacademy">
+            <a class="socials_footer_link  facebook_button" href=" https://www.facebook.com/htmlacademy">
               <span class="visually_hidden">фейсбук</span>
             </a>
           </li>
           <li class="socials_footer_icon">
-            <a class="youtube_button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually_hidden">ютуб</span>
+            <a class="socials_footer_link twitter_button" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually_hidden">твиттер</span>
             </a>
           </li>
         </ul>
-        <a class="phone_number" href="tel: +78128121212">+7(812)812-12-12</a>
+        <a class="phone_number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <img class="footer_logo" src="./images/logo-htmlacademy.svg" width="115" height="34" alt="Html Academy.">
       </footer>
     </div>
   </body>
+
 </html>
