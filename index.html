@@ -14,30 +14,30 @@
             <img class="navigation_header_logo" src="./images/header-icon/logo.svg" width="139" height="70" alt="Логотип Седона.">
           </a>
           <ul class="navigtion_list navigation_main">
-            <li class="navigation_item navigation_link_one">
-              <a class="navigation_link navigation_link_point" href="#">Главная</a>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">Главная</a>
             </li>
-            <li class="navigation_item navigation_link_one">
-              <a class="navigation_link navigation_link_point" href="#">О Седоне</a>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">О Седоне</a>
             </li>
-            <li class="navigation_item navigation_link_one">
-              <a class="navigation_link navigation_link_point" href="#">Гостиницы</a>
+            <li class="navigation_item">
+              <a class="navigation_link" href="#">Гостиницы</a>
             </li>
           </ul>
 
           <!-- 2й список ссылок в заголовке страницы -->
           <ul class="navigtion_list navigation_user">
-            <li class="navigation_item navigation_link_two">
-              <a class="navigation_link" href="#">
+            <li class="navigation_item">
+              <a class="navigation_link navigation_search" href="#">
                 <span class="visually_hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation_item navigation_link_two">
-              <a class="navigation_link" href="#">
+            <li class="navigation_item">
+              <a class="navigation_link navigation_chosen" href="#">
                 <span class="visually_hidden">Избранное</span>
               </a>
             </li>
-            <li class="navigation_item navigation_link_two">
+            <li class="navigation_item">
               <a class="icon_button navigation_link" href="#">Хочу сюда!</a>
             </li>
           </ul>
@@ -46,11 +46,10 @@
 
       <!--Лого главного экрана-->
       <main class="main_container main_index">
-        <section class="welcome_to_sedona">
-          <div >
+        <section class="welcome_to_sedona_background">
+          <div class="welcome_to_sedona_background2">
             <h1 class="visually_hidden">welcome</h1>
             <img class="logo_sedona" src="./images/welcome.svg" width="458" height="352" alt="sedona.">
-            <div class="vector_index_background"></div>
           </div>
         </section>
         <section class="welcome_to_sedona_text">
@@ -72,18 +71,18 @@
               <img class="description_photo_1" src="./images/photo-1.jpg" width="800" height="384" alt="фотография города.">
             </li>
 
-            <li class="description_item_list light12">
-              <img class="description_item" src="./images/icon-1.svg"  width="75" height="72" alt="иконка дома.">
+            <li class="description_item_list">
+              <div class="description_item_home"></div>
               <h3 class="description_item_head description_head_first">Жильё</h3>
               <p class="description_item_text description_item_first">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
             </li>
             <li class="description_item_list">
-              <img class="description_item" src="./images/icon-2.svg"  width="74" height="70" alt="иконка еды.">
+              <div class="description_item_eat"></div>
               <h3 class="description_item_head description_head_first">Еда</h3>
               <p class="description_item_text description_item_first">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="description_item_list light12">
-              <img class="description_item" src="./images/icon-3.svg"  width="64" height="76" alt="иконка сувениров.">
+            <li class="description_item_list">
+              <div class="description_item_souvenir"></div>
               <h3 class="description_item_head description_head_first">Сувениры</h3>
               <p class="description_item_text description_item_first">Не только китайского, но и настоящего местного производства!</p>
             </li>
@@ -96,7 +95,7 @@
                 <p class="description_item_text description_item_text_second color_iversion_item_text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
-            <li class="description_item light12">
+            <li class="description_item">
               <h3 class="description_item_head description_head_second">Небольшая<br>площадь</h3>
               <p class=" number">— №3 —</p>
               <p class="description_item_text description_item_text_second">Все достопримечательности находятся очень близко</p>
@@ -106,7 +105,7 @@
               <p class=" number number1">— №4 —</p>
               <p class="description_item_text description_item_text_second">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="description_item light12">
+            <li class="description_item">
               <h3 class="description_item_head description_head_second">Мало<br>туристов</h3>
               <p class=" number">— №5 —</p>
               <p class="description_item_text description_item_text_second">Большинство едет в Гранд Каньон и толпится там</p>
@@ -118,8 +117,8 @@
         <section class="finde_hostle">
           <h2 class="finde_hostle_title">Заинтересовались?</h2>
           <p class="finde_hostle_text">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="button_finde_hostle">Поиск гостиницы в седоне!</button>
+            Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="button_finde_hostle">Поиск гостиницы в седоне!</button>
         </section>
 
         <!-- Блок с рассылкой на почту -->
