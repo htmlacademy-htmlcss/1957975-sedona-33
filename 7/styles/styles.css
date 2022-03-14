@@ -98,14 +98,14 @@ ul.description_list{
   list-style-type:none;
   align-items: center;
 }
-.navigation_link_one:first-child{
+.navigation_main li:first-child{
   padding-left: 17px;
 }
-.navigation_link_point {
+.navigation_main a {
 	position: relative;
 	cursor: pointer;
 }
-.navigation_link_point:after {
+.navigation_main a:after{
   content: "";
   background-color: #756257;
 	display: block;
@@ -113,8 +113,8 @@ ul.description_list{
 	height: 2px;
   top: 43px;
 }
-.navigation_link_point:hover:after,
-.navigation_link_point:focus:after {
+.navigation_main a:hover:after,
+.navigation_main a:focus:after{
 	width: 100%;
 }
 /**********************Навигация ЛОГО*********************/
@@ -127,7 +127,6 @@ ul.description_list{
 }
 /**********************Навигация втрого списка хеддар*********************/
 .navigation_user{
-  min-width: 320px;
   margin-left: auto;
 }
 /**********************Заголовок страницы*********************/
@@ -144,15 +143,19 @@ ul.description_list{
 .icon_button.navigation_link{
   margin-right: 0;
 }
- .navigation_user .navigation_item:nth-child(1) .navigation_link{
+ .navigation_search{
   background-image: url("../images/header-icon/search.svg");
   background-repeat: no-repeat;
   background-position: center;
+  width: 18px;
+  height: 18px;
 }
-.navigation_user .navigation_item:nth-child(2) .navigation_link{
+.navigation_chosen{
   background-image: url("../images/header-icon/favorite.svg");
   background-repeat: no-repeat;
   background-position: center;
+  width: 18px;
+ height: 17px;
 }
 
 .navigation_link{
@@ -170,26 +173,27 @@ ul.description_list{
   line-height: 20px;
   padding: 9px 15px;
   width:130px;
-  text-align: center;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 
 /**********************Бекграунд на Лого главного экрана*********************/
-.welcome_to_sedona{
+.welcome_to_sedona_background{
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   width: 1200px;
 }
-.welcome_to_sedona::after{
+
+.welcome_to_sedona_background2{
   background-image: url("../images/decorative-background.svg");
   background-repeat:no-repeat;
+  background-position: 0% 99%;
 }
 
 .logo_sedona{
   padding-top: 51px;
   padding-bottom: 82px;
 }
-/**********************Бекграунд на Лого главного экрана, белая  полоса внизу*********************/
 .welcome_to_sedona_text{
   width: 1200px;
 }
@@ -211,10 +215,31 @@ ul.description_list{
   width: 720px;
   margin: auto;
 }
-
 .description_list{
   display: flex;
   flex-wrap: wrap;
+}
+/**********************Декоративные иконки в блоке основной информации.*********************/
+.description_item_home{
+  background-image: url("../images/icon-1.svg");
+  background-repeat: no-repeat;
+  width:74px;
+  height:72px;
+  margin:89px auto 23px;
+}
+.description_item_eat{
+  background-image: url("../images/icon-2.svg");
+  background-repeat: no-repeat;
+  width:74px;
+  height:70px;
+  margin:91px auto 23px;
+}
+.description_item_souvenir{
+  background-image: url("../images/icon-3.svg");
+  background-repeat: no-repeat;
+  width:64px;
+  height:75px;
+  margin:85px auto 23px;
 }
 
 /**********************Выбор гостиниц*********************/
@@ -289,8 +314,8 @@ img.description_item{
 .finde_hostle_text{
   font-size: 22px;
   line-height: 26px;
-  margin:0 240px 56px ;
-  width: 720px;
+  align-items: center;
+  margin: 0 0 56px ;
 }
 .button_finde_hostle{
   margin-bottom: 93px;
@@ -305,9 +330,11 @@ img.description_item{
   padding: 15px 0;
   cursor: pointer;
 }
-.light12{
+.description_item_list:nth-child(even),
+.description_item:nth-child(even){
   background-color: rgba(131, 179, 211, 0.12);
 }
+
 /********************** Блок с рассылкой на почту *********************/
 .distribution{
   background-image: url("../images/background.jpg");
@@ -620,7 +647,6 @@ ul.socials_footer{
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   padding: 0 20px;
-
 }
 
 .hotel_card_list{
@@ -640,7 +666,7 @@ ul.socials_footer{
   border-radius: 4px;
 }
 .card_grid_toggle:hover{
-  border: 2px solid #000000;;
+  border: 2px solid #000000;
 }
 
 .sorting_list .card_grid_toggle{
@@ -779,7 +805,7 @@ ul.socials_footer{
   margin-bottom: 46px;
   margin:94px 240px 29px ;
 }
-.distribution_text_inner {
+.distribution_text_inner{
   margin: 0 240px;
   font-size: 22px;
   line-height: 26px;
