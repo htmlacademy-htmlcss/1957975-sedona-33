@@ -101,9 +101,8 @@ ul.description_list{
 .navigation_main li:first-child{
   padding-left: 17px;
 }
-.navigation_main a {
+.navigation_main a{
 	position: relative;
-	cursor: pointer;
 }
 .navigation_main a:after{
   content: "";
@@ -132,7 +131,6 @@ ul.description_list{
 /**********************Заголовок страницы*********************/
 .navigation_link{
   display: block;
-  margin-top: -10px;
   margin-right:34px;
   font-size: 20px;
   line-height: 26px;
@@ -143,21 +141,6 @@ ul.description_list{
 .icon_button.navigation_link{
   margin-right: 0;
 }
- .navigation_search{
-  background-image: url("../images/header-icon/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 18px;
-  height: 18px;
-}
-.navigation_chosen{
-  background-image: url("../images/header-icon/favorite.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 18px;
- height: 17px;
-}
-
 .navigation_link{
   min-width: 18px;
   min-height: 18px;
@@ -179,15 +162,10 @@ ul.description_list{
 
 /**********************Бекграунд на Лого главного экрана*********************/
 .welcome_to_sedona_background{
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../images/decorative-background.svg"), url("../images/index-background.jpg");
+  background-position: 0% 100%, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
   width: 1200px;
-}
-
-.welcome_to_sedona_background2{
-  background-image: url("../images/decorative-background.svg");
-  background-repeat:no-repeat;
-  background-position: 0% 99%;
 }
 
 .logo_sedona{
@@ -219,29 +197,6 @@ ul.description_list{
   display: flex;
   flex-wrap: wrap;
 }
-/**********************Декоративные иконки в блоке основной информации.*********************/
-.description_item_home{
-  background-image: url("../images/icon-1.svg");
-  background-repeat: no-repeat;
-  width:74px;
-  height:72px;
-  margin:89px auto 23px;
-}
-.description_item_eat{
-  background-image: url("../images/icon-2.svg");
-  background-repeat: no-repeat;
-  width:74px;
-  height:70px;
-  margin:91px auto 23px;
-}
-.description_item_souvenir{
-  background-image: url("../images/icon-3.svg");
-  background-repeat: no-repeat;
-  width:64px;
-  height:75px;
-  margin:85px auto 23px;
-}
-
 /**********************Выбор гостиниц*********************/
 .description_item_head{
   font-size: 24px;
@@ -252,6 +207,7 @@ ul.description_list{
 }
 
 .description_head_second{
+
   margin: 0;
   margin-top: 98px;
 }
@@ -263,24 +219,18 @@ ul.description_list{
 .description_item:nth-child(7){
   background: rgba(131, 179, 211, 0.2);
 }
-.description_item_text_second{
-  margin: 0;
-  margin-top: 30px;
-  margin-bottom: 108px;
-}
-img.description_item{
-  margin-top: 91px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .description_item_text{
+  margin: 0;
   width: 250px;
   margin-left: 75px;
   margin-right: 75px;
-  padding-top: 0;
 }
+p.description_item_text_second{
+  display: inline-block;
+  margin:0 75px 108px;
+}
+
 .description_item_first{
   margin-bottom: 79px;
 }
@@ -289,7 +239,7 @@ img.description_item{
   background-color: #83b3d3;
   display: flex;
   width: 1200px;
-  height: 384px;
+
 }
 .color_iversion_head{
   color: #ffffff;
@@ -300,7 +250,9 @@ img.description_item{
   margin-bottom: 30px;
 }
 .color_iversion_item_text{
+  display: inline-block;
   margin-bottom: 87px;
+  width: 220px;
 }
 /**********************Блок с поиском гостницы*********************/
 .finde_hostle_title{
@@ -314,17 +266,20 @@ img.description_item{
 .finde_hostle_text{
   font-size: 22px;
   line-height: 26px;
-  align-items: center;
-  margin: 0 0 56px ;
+  margin: 0 0 56px;
+  font-family: 'PT Sans';
 }
 .button_finde_hostle{
   margin-bottom: 93px;
   color: #ffffff;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  font-family: 'PT Sans';
   text-transform: uppercase;
   background: #756257;
   width: 575px;
+  height: 60px;
   border: none;
   border-radius: 5px;
   padding: 15px 0;
@@ -333,6 +288,61 @@ img.description_item{
 .description_item_list:nth-child(even),
 .description_item:nth-child(even){
   background-color: rgba(131, 179, 211, 0.12);
+  height: auto;
+  width: auto;
+}
+
+/**********************Декоративные иконки в блоке основной информации.*********************/
+.description_head_first{
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+
+}
+.description_item_home::before{
+  background-image: url("../images/icon-1.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width:74px;
+  height:72px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 89px;
+}
+.description_item_eat::before{
+  background-image: url("../images/icon-2.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width:74px;
+  height:74px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 91px;
+}
+.description_item_souvenir::before{
+  background-image: url("../images/icon-3.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width:64px;
+  height:77px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 85px;
+}
+
+.description_item_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /********************** Блок с рассылкой на почту *********************/
