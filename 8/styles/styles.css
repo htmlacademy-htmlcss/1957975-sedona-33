@@ -1,0 +1,835 @@
+@font-face{
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face{
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  color: #333333;
+  background-color: #f2f2f2;
+  width: 1200px;
+  padding: 0px 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.visually_hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul.description_list{
+  margin-left: 0;
+  padding-left: 0
+}
+ul.hotel_card_list{
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+ul.catalog_filter_list{
+  list-style-type: none;
+}
+ul.pagination{
+  list-style-type: none;
+}
+ul.socials_footer{
+  list-style-type: none;
+}
+ul.description_list{
+  list-style-type: none;
+}
+.shadow_page{
+  background-color: #ffffff;
+  background-size: 100% auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.page_header{
+  margin-bottom: -10px;
+  z-index: 2;
+}
+.main_container{
+  flex-grow: 1;
+  width: 1200px;
+  margin: 0;
+}
+
+.navigation{
+ display: flex;
+ width: 1060px;
+ margin: 0 70px;
+}
+
+/**********************Навигация хеддера*********************/
+.navigtion_list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type:none;
+  align-items: center;
+  padding-bottom: 8px;
+}
+.navigation_main li:first-child{
+  padding-left: 17px;
+}
+.navigation_main a{
+	position: relative;
+}
+.navigation_main a:after{
+  content: "";
+  background-color: #756257;
+	display: block;
+	position: absolute;
+	height: 2px;
+  top: 43px;
+}
+.navigation_main a:hover:after,
+.navigation_main a:focus:after{
+	width: 100%;
+}
+/**********************Навигация ЛОГО*********************/
+.navigation_link_logo{
+  margin-right: 30px;
+}
+/**********************Навигация первого списка хеддар*********************/
+.navigation_main{
+  width: 450px;
+}
+/**********************Навигация втрого списка хеддар*********************/
+.navigation_user{
+  margin-left: auto;
+}
+/**********************Заголовок страницы*********************/
+.navigation_link{
+  display: block;
+  margin-right:34px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+}
+.icon_button.navigation_link{
+  margin-right: 0;
+}
+.navigation_link{
+  min-width: 18px;
+  min-height: 18px;
+}
+/**********************Кнопка "Хочу сюда" в хеддере*********************/
+.icon_button{
+  color: #ffffff;
+  background-color: #756257;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 15px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+/**********************Бекграунд на Лого главного экрана*********************/
+.welcome_to_sedona_background{
+  background-image: url("../images/decorative-background.svg"), url("../images/index-background.jpg");
+  background-position: 0% 100%, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  width: 1200px;
+}
+
+.logo_sedona{
+  padding-top: 51px;
+  padding-bottom: 82px;
+}
+.welcome_to_sedona_text{
+  width: 1200px;
+}
+.sedona_description{
+  text-transform: uppercase;
+  padding-top: 63px;
+  padding-bottom: 31px;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  width: 720px;
+  margin: auto;
+}
+.sedona_description_text{
+  padding-bottom: 80px;
+  font-size: 22px;
+  line-height: 36px;
+  color: #000000;
+  width: 720px;
+  margin: auto;
+}
+.description_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+/**********************Выбор гостиниц*********************/
+.description_item_head{
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 24px 0 20px;
+}
+
+.description_head_second{
+
+  margin: 0;
+  margin-top: 98px;
+}
+.number{
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+.description_item:nth-child(7){
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.description_item_text{
+  margin: 0;
+  width: 250px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+p.description_item_text_second{
+  display: inline-block;
+  margin:0 75px 108px;
+}
+
+.description_item_first{
+  margin-bottom: 79px;
+}
+.color_iversion{
+  color: #ffffff;
+  background-color: #83b3d3;
+  display: flex;
+  width: 1200px;
+
+}
+.color_iversion_head{
+  color: #ffffff;
+  margin-top: 97px;
+  margin-bottom: 30px;
+}
+.color_iversion_item_text_number{
+  margin-bottom: 30px;
+}
+.color_iversion_item_text{
+  display: inline-block;
+  margin-bottom: 87px;
+  width: 220px;
+}
+/**********************Блок с поиском гостницы*********************/
+.finde_hostle_title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 91px;
+  margin-bottom: 29px;
+}
+.finde_hostle_text{
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0 0 56px;
+  font-family: 'PT Sans';
+}
+.button_finde_hostle{
+  margin-bottom: 92px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  font-family: 'PT Sans';
+  text-transform: uppercase;
+  background: #756257;
+  width: 575px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.description_item_list:nth-child(even),
+.description_item:nth-child(even){
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/**********************Декоративные иконки в блоке основной информации.*********************/
+.description_head_first{
+  margin: 0;
+  margin-bottom: 20px;
+}
+.description_item_home::before{
+  background-image: url("../images/icon-1.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width:74px;
+  height:72px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 89px;
+}
+.description_item_eat::before{
+  background-image: url("../images/icon-2.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 74px;
+  height: 74px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 91px;
+}
+.description_item_souvenir::before{
+  background-image: url("../images/icon-3.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width: 64px;
+  height: 77px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 85px;
+}
+
+.description_item_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/********************** Блок с рассылкой на почту *********************/
+.distribution{
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 411px;
+  box-sizing: border-box;
+}
+.distribution_title{
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 240px 29px;
+  padding-top: 94px;
+}
+.distribution_text{
+  font-size: 22px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-left: 240px;
+  margin-right: 240px;
+  margin-bottom: 46px;
+}
+
+/**********************Кнопка Подписаться внизу страницы*********************/
+.distribution_form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 141px;
+}
+.distribution_form_input{
+  background: #f2f2f2;
+  margin: 0;
+  width: 577px;
+  height: 60px;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: start;
+  padding-left: 22px;
+  border-top-left-radius: 10px ;
+  border-bottom-left-radius: 10px;
+}
+.distribution_form_buttons{
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #83b3d3;
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 200px;
+  height: 62px;
+  cursor: pointer;
+}
+
+/**********************Footer*********************/
+.page_footer{
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials_footer{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 72px;
+}
+.socials_footer_icon:last-child{
+  padding: 0;
+  margin-right: 0;
+}
+.socials_footer_icon{
+  display: block;
+  margin-right: 30px;
+  width: 20px;
+  height: 20px;
+}
+.socials_footer_link{
+  display: block;
+  height: 19px;
+  background-repeat: no-repeat;
+}
+.facebook_button{
+  background-image: url("../images/socials-icon/icon-facebook.svg");
+  background-size: 10px 18px;
+}
+.youtube_button{
+  background-image:  url("../images/socials-icon/icon-youtube.svg");
+  background-size:  20px 16px;
+}
+.twitter_button{
+  background-image:  url("../images/socials-icon/icon-twitter.svg");
+  background-size:  18px 15px;
+}
+
+.footer_logo{
+  margin: 42px 72px 44px 0;
+  display: inline-block;
+}
+ul.socials_footer{
+  padding: 0;
+  text-align: start;
+}
+/**********************Номер телефона*********************/
+.phone_number{
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/**********************Каталог, вторая страница*********************/
+.catalog_hotel{
+  background-image: url("../images/catalog-background-1.jpg");
+  background-repeat: no-repeat;
+  height: 408px;
+  color: #ffffff;
+}
+
+/**********************Гостиницы Седоны h1*********************/
+.inner_header_title{
+  font-size: 60px;
+  line-height: 78px;
+  width: 530px;
+  margin: 0;
+  padding-top: 20px;
+  margin-left: 66px;
+  text-align: left;
+}
+
+/**********************Значок дома (ссылка на главную страницу)*********************/
+.home_page{
+  text-decoration: none;
+  margin-right: 10px;
+
+}
+.image_vector{
+  margin-right: 10px;
+}
+.breadcrumbs_item{
+  font-size: 16px;
+  line-height: 21px;
+  margin-left: 68px;
+  text-align: start;
+}
+/**********************Форма поиска по каталогу*********************/
+ .catalog_find{
+  text-align: start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.infrastructure_form{
+  margin-top: 41px;
+  margin-left: 66px;
+}
+.type_of_housing_form{
+  margin-top: 41px;
+}
+.cost_form{
+  margin-top: 41px;
+  display: flex;
+  flex-direction: column;
+}
+.infrastructure_list{
+  padding: 0;
+}
+.type_of_housing_list{
+  padding: 0;
+}
+.catalog_title{
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.calatlig_filter_item{
+  font-size: 18px;
+  line-height: 23px;
+  text-align: start;
+  padding-bottom: 13px;
+}
+
+/**********************Окшоки чекбоксов*********************/
+.checkbox_form{
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+/**********************Окшоки радокнопок*********************/
+.radio_form{
+  width: 20px;
+  height: 20px;
+}
+/**********************Кнопка применить форму*********************/
+.button_form{
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.button_apply_form{
+  background: #83b3d3;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  width: 160px;
+  height: 48px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+/**********************Кнопка сбросить форму*********************/
+.button_reset_form{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+  background: transparent;
+  border: none;
+  text-align: center;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+/**********************Названия гостиниц*********************/
+.hotel_catalog{
+  width: 1056px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.hotel_card{
+  width: 300px;
+  padding: 20px;
+}
+.hotel{
+  text-decoration: none;
+}
+.hotel_card_title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-align: start;
+}
+.span_hotel .hotel_card_price{
+  font-size: 18px;
+  line-height: 23px;
+}
+.hotel_card_description_text{
+  display: grid;
+  grid-template-columns: 133px 133px;
+  gap:25px;
+}
+.checkbox .radio .range{
+  font-size: 18px;
+  line-height: 23px;
+}
+.hotel_catalog_button{
+  display: flex;
+}
+.hotel_card_button_detail{
+  margin-right:26px;
+  width: 133px;
+  border: none;
+}
+
+/**********************Секция с сортровокой гостиниц по категориям*********************/
+.sorting{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1057px;
+  margin: 44px 71px 53px;
+}
+.title_sorting{
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  width: 700px;
+  margin-right: 192px;
+}
+.select_list{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: #333333;
+  font-size: 18px;
+  line-height: 23px;
+  margin-right: 50px;
+}
+.select_control{
+  padding: 13px 100px 12px 17px;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+/**********************Список гостиниц*********************/
+.hotel_card_list{
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  gap: 18px;
+}
+/**********************Сортировка списка карточек*********************/
+.sorting_list{
+  display: flex;
+}
+.card_grid_toggle{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+.card_grid_toggle:hover{
+  border: 2px solid #000000;
+}
+.card_grid_toggle:last-child{
+  margin-right: 0;
+}
+
+.hotel_card_description{
+  display: grid;
+  gap: 15px;
+  justify-content: start;
+  text-align: start;
+}
+
+
+/**********************Кнопка подробнее*********************/
+.hotel_card_button_detail.button{
+  background: #756257;
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/**********************Кнопка в избранное*********************/
+.hotel_card_button_select.button{
+  background: #83b3d3;
+  border-radius: 4px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.hotel_card_button_select{
+  width: 133px;
+  border: none;
+}
+.hotel_card_button_select.button:hover{
+  background-color: #7DB54F;;
+}
+/**********************Переключение страниц 1,2,3,4 ...*********************/
+.pagination_link.pagination_current{
+  background: #f2f2f2;
+  color: #000000;
+}
+.pagination{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.pagination_item:not(:last-child){
+  margin-right: 8px;
+}
+.pagination_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
+  color: #f2f2f2;
+  background: #83b3d3;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.pagination_bar{
+  width: 1056px;
+  display: flex;
+}
+
+/**********************Рейтинг госиниц*********************/
+.stars_rating{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.star{
+  margin-right: 7px;
+}
+.stars_rating .star:last-child{
+  margin-right: 0;
+}
+.star_score{
+  display: inline-block;
+  text-align: center;
+  border-radius: 4px;
+  padding: 9px 0  10px;
+  margin-left: auto;
+  font-size: 16px;
+  line-height: 21px;
+  background: #f2f2f2;
+  text-transform: uppercase;
+  color: #333333;
+  width: 160px;
+}
+
+
+
+/**********************Кнопка загрузить еще*********************/
+.pagination_show_more_button{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+  width: 620px;
+  padding: 17px 0;
+  color: #ffffff;
+  background-color: #83b3d3;
+  border-radius: 4px;
+  border: none;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.pagination_show_more_button_decor{
+  border: 1px solid #E6E6E6;
+  border-right-style: none;
+  border-left-style: none;
+  margin-bottom: 30px;
+}
+/**********************НАЧАЛО Блок с рассылкой на почту второй страницы *********************/
+.distribution_inner{
+  background: #FFFFFF;
+  margin-top: 73px;
+  margin-bottom: 140px;
+}
+.distribution_title_inner{
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 73px auto 46px;
+}
+.distribution_text_inner{
+  display: inline-block;
+  font-size: 22px;
+  line-height: 26px;
+  margin:0 auto 46px;
+}
