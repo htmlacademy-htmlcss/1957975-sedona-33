@@ -31,6 +31,7 @@ body{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 .visually_hidden{
   position: absolute;
@@ -42,7 +43,6 @@ body{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
 
 ul.description_list{
   margin-left: 0;
@@ -62,7 +62,9 @@ ul.pagination{
 ul.socials_footer{
   list-style-type:none;
 }
-
+ul.description_list{
+  list-style-type:none;
+}
 .shadow_page{
   background-color: #ffffff;
   background-size: 100% auto;
@@ -71,7 +73,10 @@ ul.socials_footer{
   flex-direction: column;
   min-height: 100%;
 }
-
+.page_header{
+  margin-bottom:-10px;
+  z-index:2;
+}
 .main_container{
   flex-grow: 1;
   width: 1200px;
@@ -81,7 +86,7 @@ ul.socials_footer{
 .navigation{
  display: flex;
  width: 1060px;
- margin: 0 auto;
+ margin: 0 70px;
 }
 
 /**********************Навигация хеддера*********************/
@@ -93,6 +98,24 @@ ul.socials_footer{
   list-style-type:none;
   align-items: center;
 }
+.navigation_main li:first-child{
+  padding-left: 17px;
+}
+.navigation_main a{
+	position: relative;
+}
+.navigation_main a:after{
+  content: "";
+  background-color: #756257;
+	display: block;
+	position: absolute;
+	height: 2px;
+  top: 43px;
+}
+.navigation_main a:hover:after,
+.navigation_main a:focus:after{
+	width: 100%;
+}
 /**********************Навигация ЛОГО*********************/
 .navigation_link_logo{
   margin-right: 30px;
@@ -100,25 +123,25 @@ ul.socials_footer{
 /**********************Навигация первого списка хеддар*********************/
 .navigation_main{
   width: 450px;
-  text-align: start;
 }
 /**********************Навигация втрого списка хеддар*********************/
 .navigation_user{
-  width: 320px;
   margin-left: auto;
-  text-align: start;
 }
 /**********************Заголовок страницы*********************/
 .navigation_link{
   display: block;
-  padding: 20px 17px;
+  margin-right:34px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
 }
-.navigtion_list .navigation_user{
+.icon_button.navigation_link{
+  margin-right: 0;
+}
+.navigation_link{
   min-width: 18px;
   min-height: 18px;
 }
@@ -129,23 +152,26 @@ ul.socials_footer{
   border-radius: 4px;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
   padding: 9px 15px;
-  width: 160px;
-  text-align: center;
-  margin-left: 32px;
+  width:130px;
+  display: flex;
+  justify-content: center;
 }
 
 /**********************Бекграунд на Лого главного экрана*********************/
-.welcome_to_sedona{
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
+.welcome_to_sedona_background{
+  background-image: url("../images/decorative-background.svg"), url("../images/index-background.jpg");
+  background-position: 0% 100%, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
   width: 1200px;
 }
+
 .logo_sedona{
   padding-top: 51px;
   padding-bottom: 82px;
 }
-/**********************Бекграунд на Лого главного экрана, белая  полоса внизу*********************/
 .welcome_to_sedona_text{
   width: 1200px;
 }
@@ -167,41 +193,53 @@ ul.socials_footer{
   width: 720px;
   margin: auto;
 }
-
 .description_list{
   display: flex;
   flex-wrap: wrap;
 }
-
 /**********************Выбор гостиниц*********************/
 .description_item_head{
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-}
-.description_item_head:nth-child(2){
-  background-color: #ffffff;
+  margin: 24px 0 20px;
 }
 
-.description_item{
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.description_head_second{
+
+  margin: 0;
+  margin-top: 98px;
 }
+.number{
+  margin: 0;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+.description_item:nth-child(7){
+  background: rgba(131, 179, 211, 0.2);
+}
+
 .description_item_text{
+  margin: 0;
   width: 250px;
   margin-left: 75px;
   margin-right: 75px;
-  padding-top: 0;
+}
+p.description_item_text_second{
+  display: inline-block;
+  margin:0 75px 108px;
+}
+
+.description_item_first{
+  margin-bottom: 79px;
 }
 .color_iversion{
   color: #ffffff;
   background-color: #83b3d3;
   display: flex;
   width: 1200px;
-  height: 384px;
+
 }
 .color_iversion_head{
   color: #ffffff;
@@ -212,25 +250,99 @@ ul.socials_footer{
   margin-bottom: 30px;
 }
 .color_iversion_item_text{
+  display: inline-block;
   margin-bottom: 87px;
+  width: 220px;
 }
 /**********************Блок с поиском гостницы*********************/
 .finde_hostle_title{
-  font: size 30px;
+  font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 91px;
+  margin-bottom: 29px;
 }
 .finde_hostle_text{
   font-size: 22px;
   line-height: 26px;
+  margin: 0 0 56px;
+  font-family: 'PT Sans';
 }
 .button_finde_hostle{
+  margin-bottom: 93px;
   color: #ffffff;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  font-family: 'PT Sans';
   text-transform: uppercase;
   background: #756257;
+  width: 575px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.description_item_list:nth-child(even),
+.description_item:nth-child(even){
+  background-color: rgba(131, 179, 211, 0.12);
+  height: auto;
+  width: auto;
+}
+
+/**********************Декоративные иконки в блоке основной информации.*********************/
+.description_head_first{
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+
+}
+.description_item_home::before{
+  background-image: url("../images/icon-1.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width:74px;
+  height:72px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 89px;
+}
+.description_item_eat::before{
+  background-image: url("../images/icon-2.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width:74px;
+  height:74px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 91px;
+}
+.description_item_souvenir::before{
+  background-image: url("../images/icon-3.svg");
+  background-repeat: no-repeat;
+  position: relative;
+  width:64px;
+  height:77px;
+  display: block;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
+  content: "";
+  margin-top: 85px;
+}
+
+.description_item_list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /********************** Блок с рассылкой на почту *********************/
@@ -239,16 +351,15 @@ ul.socials_footer{
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: 411px;
-
+  box-sizing: border-box;
 }
-
 .distribution_title{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 0 240px 29px;
   padding-top: 94px;
-  margin-bottom: 30px;
 }
 .distribution_text{
   font-size: 22px;
@@ -267,13 +378,10 @@ ul.socials_footer{
 }
 .distribution_form_input{
   background: #f2f2f2;
-  margin-bottom: 94px;
-  width: 600px;
-  height: 60px;
-  left: calc(50% - 600px/2 + 500px);
-  bottom: 261px;
-  text-align: center;
   margin: 0;
+  width: 577px;
+  height: 60px;
+  bottom: 261px;
   border: none;
   font-size: 18px;
   line-height: 26px;
@@ -293,6 +401,7 @@ ul.socials_footer{
   border-bottom-right-radius: 10px;
   width: 200px;
   height: 62px;
+  cursor: pointer;
 }
 
 /**********************Footer*********************/
@@ -308,19 +417,39 @@ ul.socials_footer{
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-left: 72px;
 }
-
 .socials_footer_icon:last-child{
   padding: 0;
   margin-right: 0;
 }
 .socials_footer_icon{
+  display: block;
   margin-right: 30px;
   width: 20px;
   height: 20px;
 }
+.socials_footer_link{
+  display: block;
+  height: 19px;
+  background-repeat: no-repeat;
+}
+.facebook_button{
+  background-image: url("../images/socials-icon/icon-facebook.svg");
+  background-size:10px 18px;
+}
+.youtube_button{
+  background-image: url("../images/socials-icon/icon-youtube.svg");
+  background-size:20px 16px;
+}
+.twitter_button{
+  background-image:url("../images/socials-icon/icon-twitter.svg");
+  background-size:18px 15px;
+}
+
 .footer_logo{
-  margin-right: 72px;
+  margin:42px 72px 44px 0;
+  display:inline-block;
 }
 ul.socials_footer{
   padding: 0;
@@ -333,7 +462,9 @@ ul.socials_footer{
   color: #000000;
   text-decoration: none;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /**********************Каталог, вторая страница*********************/
@@ -342,27 +473,25 @@ ul.socials_footer{
   background-repeat: no-repeat;
   height: 408px;
   color: #ffffff;
-
 }
 
 /**********************Гостиницы Седоны h1*********************/
 .inner_header_title{
   font-size: 60px;
   line-height: 78px;
-  font-weight: bold;
   width: 530px;
-  margin-left: 71px;
   margin: 0;
   padding-top:20px;
-  padding-left: 35px;
+  margin-left: 72px;
 }
-.breadcrumbs_item_hotel{
-  margin-left: 10px;
+
+.image_vector{
+  margin-right: 10px;
 }
 .breadcrumbs_item{
   font-size: 16px;
   line-height: 21px;
-  margin-left: 72px;
+  margin-left: 93px;
   text-align: start;
 }
 /**********************Форма поиска по каталогу*********************/
@@ -421,6 +550,7 @@ ul.socials_footer{
   align-items: center;
   justify-content: center;
   border:none;
+
 }
 
 .button_apply_form{
@@ -433,6 +563,8 @@ ul.socials_footer{
   height: 48px;
   text-align: center;
   border-radius: 4px;
+  cursor: pointer;
+  border: none;
 }
 /**********************Кнопка сбросить форму*********************/
 .button_reset_form{
@@ -443,6 +575,7 @@ ul.socials_footer{
   border: none;
   text-align: center;
   padding-top: 20px;
+  cursor: pointer;
 }
 /**********************Названия гостиниц*********************/
 .hotel_catalog{
@@ -490,6 +623,7 @@ ul.socials_footer{
 .sorting{
   display:flex;
   align-items: center;
+  justify-content: space-between;
   width: 1057px;
   margin: 44px 72px 53px;
 }
@@ -512,7 +646,7 @@ ul.socials_footer{
   margin-right: 50px;
 }
 .select_control{
-  width: 160px;
+  width: 287px;
   height: 48px;
   font-size: 18px;
   line-height: 23px;
@@ -520,6 +654,9 @@ ul.socials_footer{
   margin-right: 81px;
   margin-top: 3px;
   margin-bottom: 3px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+  padding: 0 20px;
 }
 
 .hotel_card_list{
@@ -529,16 +666,25 @@ ul.socials_footer{
   grid-template-columns:340px 340px 340px;
   gap:17px;
 }
-
-.sorting_list{
+/**********************Сортировка списка карточек*********************/
+.card_grid_toggle{
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 }
-.sorting_list .button{
+.card_grid_toggle:hover{
+  border: 2px solid #000000;
+}
+
+.sorting_list .card_grid_toggle{
   width: 48px;
   height: 48px;
   margin-right: 8px;
 }
-.sorting_list .button:last-child{
+.sorting_list .card_grid_toggle:last-child{
   margin-right: 0;
 }
 
@@ -552,8 +698,7 @@ ul.socials_footer{
 /**********************Значок дома (ссылка на главную страницу)*********************/
 .home_page{
   text-decoration: none;
-  height: 12px;
-  width: 12px;
+  margin-right: 10px;
 }
 /**********************Кнопка подробнее*********************/
 .hotel_card_button_detail.button{
@@ -567,6 +712,7 @@ ul.socials_footer{
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /**********************Кнопка в избранное*********************/
@@ -581,6 +727,7 @@ ul.socials_footer{
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /**********************Страницы с гостиницами*********************/
@@ -644,12 +791,12 @@ ul.socials_footer{
   background-color: #83b3d3;
   border-radius: 4px;
   border: none;
-  margin: 20px 0;
+  margin: 30px 0;
+  cursor: pointer;
 }
 
 .pagination_show_more_button_decor{
   border: 1px solid #E6E6E6;
-  transform: rotate(0deg);
   border-right-style: none;
   border-left-style: none;
   margin-bottom: 30px;
@@ -666,8 +813,10 @@ ul.socials_footer{
   color: #000000;
   text-transform: uppercase;
   margin-bottom: 46px;
+  margin:94px 240px 29px ;
 }
-.distribution_text_inner {
+.distribution_text_inner{
+  margin: 0 240px;
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 46px;
