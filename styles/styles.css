@@ -85,13 +85,11 @@ ul.description_list{
   width: 1200px;
   margin: 0;
 }
-
 .navigation{
  display: flex;
  width: 1060px;
  margin: 0 70px;
 }
-
 /**********************Навигация хеддера*********************/
 .navigtion_list{
   margin: 0;
@@ -142,7 +140,6 @@ ul.description_list{
   margin: auto;
   padding: 0 10px;
 }
-
 .icon_favorite{
   margin-right: 25px;
 }
@@ -484,6 +481,12 @@ p.description_item_text_second{
   height: 19px;
   background-repeat: no-repeat;
   background-position: center;
+}
+.socials_footer_link:hover,
+.socials_footer_link:focus,
+.socials_footer_link:active{
+  background-color: #488aab;
+  border-radius: 35%;
 }
 .facebook_button{
   background-image: url("../images/socials-icon/icon-facebook.svg");

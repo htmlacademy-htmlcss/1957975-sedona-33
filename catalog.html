@@ -67,36 +67,35 @@
             <!--Окно выбра чекбоксов-->
           <form class="catalog_find" action="https://echo.htmlacademy.ru/courses" method="get">
             <fieldset class="catalog_filter_hotel infrastructure_form">
-              <legend class="catalog_title infrastructure">Инфраструктура:
-                <ul class="catalog_filter_list infrastructure_list">
-                  <li class="calatlig_filter_item">
-                    <label class="checkbox control">
-                      <input class="checkbox_form visually_hidden control_input" type="checkbox" name="Бассейн" checked>
-                      <span class="control_mark"></span>
-                      <span class="control_label">Бассейн</span>
-                    </label>
-                  </li>
-                  <li class="calatlig_filter_item">
-                    <label class="checkbox control">
-                      <input class="checkbox_form visually_hidden control_input" type="checkbox" name="Парковка" checked>
-                      <span class="control_mark"></span>
-                      <span class="control_label">Парковка</span>
-                    </label>
-                  </li>
-                  <li class="calatlig_filter_item">
-                    <label class="checkbox control">
-                      <input class="checkbox_form visually_hidden control_input" type="checkbox" name="Wi-Fi" disabled>
-                      <span class="control_mark"></span>
-                      <span class="control_label" >Wi-Fi</span>
-                    </label>
-                  </li>
-                </ul>
-              </legend>
+              <legend class="catalog_title infrastructure">Инфраструктура:</legend>
+              <ul class="catalog_filter_list infrastructure_list">
+                <li class="calatlig_filter_item">
+                  <label class="checkbox control">
+                    <input class="checkbox_form visually_hidden control_input" type="checkbox" name="Бассейн" checked>
+                    <span class="control_mark"></span>
+                    <span class="control_label">Бассейн</span>
+                  </label>
+                </li>
+                <li class="calatlig_filter_item">
+                  <label class="checkbox control">
+                    <input class="checkbox_form visually_hidden control_input" type="checkbox" name="Парковка" checked>
+                    <span class="control_mark"></span>
+                    <span class="control_label">Парковка</span>
+                  </label>
+                </li>
+                <li class="calatlig_filter_item">
+                  <label class="checkbox control">
+                    <input class="checkbox_form visually_hidden control_input" type="checkbox" name="Wi-Fi" disabled>
+                    <span class="control_mark"></span>
+                    <span class="control_label" >Wi-Fi</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
 
             <!--Окно выбра радокнопок-->
             <fieldset class="catalog_filter_hotel type_of_housing_form">
-              <legend class="catalog_title type_of_housing">Тип жилья:
+              <legend class="catalog_title type_of_housing">Тип жилья:</legend>
                 <ul class="catalog_filter_list type_of_housing_list">
                   <li class="calatlig_filter_item">
                     <label class="radio control">
@@ -120,11 +119,11 @@
                     </label>
                   </li>
                 </ul>
-              </legend>
             </fieldset>
 
             <!--Окно выбра цены-->
             <fieldset class="catalog_filter_hotel cost_form">
+              <legend class="catalog_title cost">Стоимость, ₽:</legend>
               <div class="range_wrapper_inputs">
                 <label class="catalog_filter_label">
                   <span class="range_input_text">от</span>
@@ -135,16 +134,14 @@
                   <input class="range_input range_input_max" type="number" value="9000" name="max-price" style="width: 71px">
                 </label>
               </div>
-              <legend class="catalog_title cost">Стоимость, ₽:
-                <div class="range">
-                  <div class="range_sacle">
-                    <div class="range_bar" style="left: 0; width: 215px">
-                      <button type="button" class="range_toggle range_toggle_min"></button>
-                      <button type="button" class="range_toggle range_toggle_max"></button>
-                    </div>
+              <div class="range">
+                <div class="range_sacle">
+                  <div class="range_bar" style="left: 0; width: 215px">
+                    <button type="button" class="range_toggle range_toggle_min"></button>
+                    <button type="button" class="range_toggle range_toggle_max"></button>
                   </div>
                 </div>
-              </legend>
+              </div>
             </fieldset>
 
             <div class="button_form">
